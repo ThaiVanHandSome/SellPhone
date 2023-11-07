@@ -56,5 +56,11 @@ namespace SellPhone
             BrandTypeControl brandControl = new BrandTypeControl();
             pnlContainer.Controls.Add(brandControl);
         }
+
+        private void btnEmploy_Click(object sender, EventArgs e)
+        {
+            EmployControl employcontrol = new EmployControl();
+            pnlContainer.Controls.Add(employcontrol);
+        }
     }
 }

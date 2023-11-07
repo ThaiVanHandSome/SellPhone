@@ -133,6 +133,16 @@ namespace SellPhone.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eraser_solid {
+            get {
+                object obj = ResourceManager.GetObject("eraser-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file {
             get {
                 object obj = ResourceManager.GetObject("file", resourceCulture);
