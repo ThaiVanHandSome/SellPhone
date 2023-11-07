@@ -64,6 +64,12 @@
     <Compile Include="BrandTypeControl.Designer.cs">
       <DependentUpon>BrandTypeControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployControl.Designer.cs">
+      <DependentUpon>EmployControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="FindPhoneControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BrandTypeControl.resx">
       <DependentUpon>BrandTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployControl.resx">
+      <DependentUpon>EmployControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindPhoneControl.resx">
       <DependentUpon>FindPhoneControl.cs</DependentUpon>
