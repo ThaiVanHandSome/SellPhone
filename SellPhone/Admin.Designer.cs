@@ -83,16 +83,18 @@
             this.menu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(258, 854);
+            this.menu.Size = new System.Drawing.Size(229, 690);
             this.menu.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.ptbLogo);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 145);
+            this.panel1.Size = new System.Drawing.Size(221, 116);
             this.panel1.TabIndex = 0;
             // 
             // ptbLogo
@@ -100,8 +102,9 @@
             this.ptbLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptbLogo.Image = global::SellPhone.Properties.Resources.snapedit_1699004990344;
             this.ptbLogo.Location = new System.Drawing.Point(0, 0);
+            this.ptbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbLogo.Name = "ptbLogo";
-            this.ptbLogo.Size = new System.Drawing.Size(249, 145);
+            this.ptbLogo.Size = new System.Drawing.Size(221, 116);
             this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbLogo.TabIndex = 0;
             this.ptbLogo.TabStop = false;
@@ -110,9 +113,10 @@
             // 
             this.pnlMenu.Controls.Add(this.btnMenu);
             this.pnlMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlMenu.Location = new System.Drawing.Point(3, 154);
+            this.pnlMenu.Location = new System.Drawing.Point(3, 122);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(249, 59);
+            this.pnlMenu.Size = new System.Drawing.Size(221, 47);
             this.pnlMenu.TabIndex = 1;
             // 
             // btnMenu
@@ -122,10 +126,11 @@
             this.btnMenu.ForeColor = System.Drawing.Color.White;
             this.btnMenu.Image = global::SellPhone.Properties.Resources.menu;
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Location = new System.Drawing.Point(-17, -3);
+            this.btnMenu.Location = new System.Drawing.Point(-15, -2);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnMenu.Size = new System.Drawing.Size(283, 65);
+            this.btnMenu.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnMenu.Size = new System.Drawing.Size(252, 52);
             this.btnMenu.TabIndex = 2;
             this.btnMenu.Text = "        Danh mục";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -138,19 +143,21 @@
             this.pnlSubnav.Controls.Add(this.pnlPhone);
             this.pnlSubnav.Controls.Add(this.pnlEmploy);
             this.pnlSubnav.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlSubnav.Location = new System.Drawing.Point(3, 219);
-            this.pnlSubnav.MaximumSize = new System.Drawing.Size(249, 201);
+            this.pnlSubnav.Location = new System.Drawing.Point(3, 173);
+            this.pnlSubnav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlSubnav.MaximumSize = new System.Drawing.Size(221, 161);
             this.pnlSubnav.Name = "pnlSubnav";
-            this.pnlSubnav.Size = new System.Drawing.Size(249, 201);
+            this.pnlSubnav.Size = new System.Drawing.Size(221, 161);
             this.pnlSubnav.TabIndex = 10;
             // 
             // pnlBrandType
             // 
             this.pnlBrandType.Controls.Add(this.btnProviderType);
-            this.pnlBrandType.Location = new System.Drawing.Point(0, 3);
-            this.pnlBrandType.MaximumSize = new System.Drawing.Size(249, 59);
+            this.pnlBrandType.Location = new System.Drawing.Point(0, 2);
+            this.pnlBrandType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlBrandType.MaximumSize = new System.Drawing.Size(221, 47);
             this.pnlBrandType.Name = "pnlBrandType";
-            this.pnlBrandType.Size = new System.Drawing.Size(249, 59);
+            this.pnlBrandType.Size = new System.Drawing.Size(221, 47);
             this.pnlBrandType.TabIndex = 2;
             // 
             // btnProviderType
@@ -161,11 +168,12 @@
             this.btnProviderType.ForeColor = System.Drawing.Color.White;
             this.btnProviderType.Image = global::SellPhone.Properties.Resources.file;
             this.btnProviderType.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProviderType.Location = new System.Drawing.Point(-17, -3);
-            this.btnProviderType.MaximumSize = new System.Drawing.Size(283, 65);
+            this.btnProviderType.Location = new System.Drawing.Point(-15, -2);
+            this.btnProviderType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProviderType.MaximumSize = new System.Drawing.Size(252, 52);
             this.btnProviderType.Name = "btnProviderType";
-            this.btnProviderType.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnProviderType.Size = new System.Drawing.Size(283, 65);
+            this.btnProviderType.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnProviderType.Size = new System.Drawing.Size(252, 52);
             this.btnProviderType.TabIndex = 2;
             this.btnProviderType.Text = "        NCC-Loại";
             this.btnProviderType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,10 +183,11 @@
             // pnlPhone
             // 
             this.pnlPhone.Controls.Add(this.btnPhone);
-            this.pnlPhone.Location = new System.Drawing.Point(0, 68);
-            this.pnlPhone.MaximumSize = new System.Drawing.Size(249, 59);
+            this.pnlPhone.Location = new System.Drawing.Point(0, 54);
+            this.pnlPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlPhone.MaximumSize = new System.Drawing.Size(221, 47);
             this.pnlPhone.Name = "pnlPhone";
-            this.pnlPhone.Size = new System.Drawing.Size(249, 59);
+            this.pnlPhone.Size = new System.Drawing.Size(221, 47);
             this.pnlPhone.TabIndex = 3;
             // 
             // btnPhone
@@ -189,11 +198,12 @@
             this.btnPhone.ForeColor = System.Drawing.Color.White;
             this.btnPhone.Image = global::SellPhone.Properties.Resources.call;
             this.btnPhone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhone.Location = new System.Drawing.Point(-17, -3);
-            this.btnPhone.MaximumSize = new System.Drawing.Size(283, 65);
+            this.btnPhone.Location = new System.Drawing.Point(-15, -2);
+            this.btnPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPhone.MaximumSize = new System.Drawing.Size(252, 52);
             this.btnPhone.Name = "btnPhone";
-            this.btnPhone.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnPhone.Size = new System.Drawing.Size(283, 65);
+            this.btnPhone.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnPhone.Size = new System.Drawing.Size(252, 52);
             this.btnPhone.TabIndex = 2;
             this.btnPhone.Text = "        Điện Thoại";
             this.btnPhone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,10 +212,11 @@
             // pnlEmploy
             // 
             this.pnlEmploy.Controls.Add(this.btnEmploy);
-            this.pnlEmploy.Location = new System.Drawing.Point(0, 133);
-            this.pnlEmploy.MaximumSize = new System.Drawing.Size(249, 59);
+            this.pnlEmploy.Location = new System.Drawing.Point(0, 106);
+            this.pnlEmploy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlEmploy.MaximumSize = new System.Drawing.Size(221, 47);
             this.pnlEmploy.Name = "pnlEmploy";
-            this.pnlEmploy.Size = new System.Drawing.Size(249, 59);
+            this.pnlEmploy.Size = new System.Drawing.Size(221, 47);
             this.pnlEmploy.TabIndex = 5;
             // 
             // btnEmploy
@@ -216,11 +227,12 @@
             this.btnEmploy.ForeColor = System.Drawing.Color.White;
             this.btnEmploy.Image = global::SellPhone.Properties.Resources.freelancer;
             this.btnEmploy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmploy.Location = new System.Drawing.Point(-17, -3);
-            this.btnEmploy.MaximumSize = new System.Drawing.Size(283, 65);
+            this.btnEmploy.Location = new System.Drawing.Point(-15, -2);
+            this.btnEmploy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEmploy.MaximumSize = new System.Drawing.Size(252, 52);
             this.btnEmploy.Name = "btnEmploy";
-            this.btnEmploy.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnEmploy.Size = new System.Drawing.Size(283, 65);
+            this.btnEmploy.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnEmploy.Size = new System.Drawing.Size(252, 52);
             this.btnEmploy.TabIndex = 2;
             this.btnEmploy.Text = "        Nhân Viên";
             this.btnEmploy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -230,9 +242,10 @@
             // 
             this.pnlBill.Controls.Add(this.btnBill);
             this.pnlBill.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlBill.Location = new System.Drawing.Point(3, 426);
+            this.pnlBill.Location = new System.Drawing.Point(3, 338);
+            this.pnlBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBill.Name = "pnlBill";
-            this.pnlBill.Size = new System.Drawing.Size(249, 59);
+            this.pnlBill.Size = new System.Drawing.Size(221, 47);
             this.pnlBill.TabIndex = 6;
             // 
             // btnBill
@@ -242,10 +255,11 @@
             this.btnBill.ForeColor = System.Drawing.Color.White;
             this.btnBill.Image = global::SellPhone.Properties.Resources.invoice;
             this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBill.Location = new System.Drawing.Point(-17, -3);
+            this.btnBill.Location = new System.Drawing.Point(-15, -2);
+            this.btnBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBill.Name = "btnBill";
-            this.btnBill.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnBill.Size = new System.Drawing.Size(283, 65);
+            this.btnBill.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnBill.Size = new System.Drawing.Size(252, 52);
             this.btnBill.TabIndex = 2;
             this.btnBill.Text = "        Hóa Đơn";
             this.btnBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -255,9 +269,10 @@
             // 
             this.pnlAccount.Controls.Add(this.btnAccount);
             this.pnlAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlAccount.Location = new System.Drawing.Point(3, 491);
+            this.pnlAccount.Location = new System.Drawing.Point(3, 389);
+            this.pnlAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAccount.Name = "pnlAccount";
-            this.pnlAccount.Size = new System.Drawing.Size(249, 59);
+            this.pnlAccount.Size = new System.Drawing.Size(221, 47);
             this.pnlAccount.TabIndex = 9;
             // 
             // btnAccount
@@ -267,10 +282,11 @@
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Image = global::SellPhone.Properties.Resources.user;
             this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(-17, -3);
+            this.btnAccount.Location = new System.Drawing.Point(-15, -2);
+            this.btnAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnAccount.Size = new System.Drawing.Size(283, 65);
+            this.btnAccount.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnAccount.Size = new System.Drawing.Size(252, 52);
             this.btnAccount.TabIndex = 2;
             this.btnAccount.Text = "        Tài Khoản";
             this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -280,9 +296,10 @@
             // 
             this.pnlReport.Controls.Add(this.btnReport);
             this.pnlReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlReport.Location = new System.Drawing.Point(3, 556);
+            this.pnlReport.Location = new System.Drawing.Point(3, 440);
+            this.pnlReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlReport.Name = "pnlReport";
-            this.pnlReport.Size = new System.Drawing.Size(249, 59);
+            this.pnlReport.Size = new System.Drawing.Size(221, 47);
             this.pnlReport.TabIndex = 8;
             // 
             // btnReport
@@ -292,10 +309,11 @@
             this.btnReport.ForeColor = System.Drawing.Color.White;
             this.btnReport.Image = global::SellPhone.Properties.Resources.business_report;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(-17, -3);
+            this.btnReport.Location = new System.Drawing.Point(-15, -2);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnReport.Size = new System.Drawing.Size(283, 65);
+            this.btnReport.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnReport.Size = new System.Drawing.Size(252, 52);
             this.btnReport.TabIndex = 2;
             this.btnReport.Text = "        Báo Cáo";
             this.btnReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -305,9 +323,10 @@
             // 
             this.pnlSearch.Controls.Add(this.btnSearch);
             this.pnlSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlSearch.Location = new System.Drawing.Point(3, 621);
+            this.pnlSearch.Location = new System.Drawing.Point(3, 491);
+            this.pnlSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(249, 59);
+            this.pnlSearch.Size = new System.Drawing.Size(221, 47);
             this.pnlSearch.TabIndex = 7;
             // 
             // btnSearch
@@ -317,14 +336,16 @@
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::SellPhone.Properties.Resources.zoom_in;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(-17, -3);
+            this.btnSearch.Location = new System.Drawing.Point(-15, -2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnSearch.Size = new System.Drawing.Size(283, 65);
+            this.btnSearch.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnSearch.Size = new System.Drawing.Size(252, 52);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "        Tìm Kiếm";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // timerMenu
             // 
@@ -336,17 +357,19 @@
             this.pnlMain.Controls.Add(this.pnlContainer);
             this.pnlMain.Controls.Add(this.pnlHeader);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(258, 0);
+            this.pnlMain.Location = new System.Drawing.Point(229, 0);
+            this.pnlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1020, 854);
+            this.pnlMain.Size = new System.Drawing.Size(911, 690);
             this.pnlMain.TabIndex = 1;
             // 
             // pnlContainer
             // 
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContainer.Location = new System.Drawing.Point(0, 95);
+            this.pnlContainer.Location = new System.Drawing.Point(0, 76);
+            this.pnlContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1020, 759);
+            this.pnlContainer.Size = new System.Drawing.Size(911, 614);
             this.pnlContainer.TabIndex = 2;
             // 
             // pnlHeader
@@ -355,8 +378,9 @@
             this.pnlHeader.Controls.Add(this.lblSlogan);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1020, 95);
+            this.pnlHeader.Size = new System.Drawing.Size(911, 76);
             this.pnlHeader.TabIndex = 1;
             // 
             // lblSlogan
@@ -366,7 +390,7 @@
             this.lblSlogan.ForeColor = System.Drawing.Color.White;
             this.lblSlogan.Location = new System.Drawing.Point(0, 0);
             this.lblSlogan.Name = "lblSlogan";
-            this.lblSlogan.Size = new System.Drawing.Size(1020, 95);
+            this.lblSlogan.Size = new System.Drawing.Size(911, 76);
             this.lblSlogan.TabIndex = 0;
             this.lblSlogan.Text = "JUST DO IT";
             this.lblSlogan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -374,20 +398,21 @@
             // Admin
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackgroundImage = global::SellPhone.Properties.Resources._6u2ywY;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1278, 854);
+            this.ClientSize = new System.Drawing.Size(1140, 690);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.menu);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1300, 910);
+            this.MaximumSize = new System.Drawing.Size(1158, 737);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1300, 910);
+            this.MinimumSize = new System.Drawing.Size(1158, 737);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";

@@ -56,5 +56,11 @@ namespace SellPhone
             BrandTypeControl brandControl = new BrandTypeControl();
             pnlContainer.Controls.Add(brandControl);
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            FindPhoneControl findPhoneControl = new FindPhoneControl();
+            pnlContainer.Controls.Add(findPhoneControl);
+        }
     }
 }
