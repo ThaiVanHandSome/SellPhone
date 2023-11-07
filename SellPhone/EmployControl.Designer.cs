@@ -200,7 +200,7 @@
             this.txt_DiaChi.Location = new System.Drawing.Point(104, 160);
             this.txt_DiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txt_DiaChi.Name = "txt_DiaChi";
-            this.txt_DiaChi.Size = new System.Drawing.Size(294, 22);
+            this.txt_DiaChi.Size = new System.Drawing.Size(326, 22);
             this.txt_DiaChi.TabIndex = 14;
             // 
             // txt_NgaySinh

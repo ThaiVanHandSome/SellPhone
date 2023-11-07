@@ -76,8 +76,17 @@
     <Compile Include="FindPhoneControl.Designer.cs">
       <DependentUpon>FindPhoneControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddEmploy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmploy.Designer.cs">
+      <DependentUpon>AddEmploy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddEmploy.resx">
+      <DependentUpon>AddEmploy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
