@@ -97,12 +97,10 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.ptbLogo);
-
             this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 116);
-
             this.panel1.TabIndex = 0;
             // 
             // ptbLogo
@@ -123,12 +121,10 @@
             // 
             this.pnlMenu.Controls.Add(this.btnMenu);
             this.pnlMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-
             this.pnlMenu.Location = new System.Drawing.Point(3, 122);
             this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(221, 47);
-
             this.pnlMenu.TabIndex = 1;
             // 
             // btnMenu
@@ -138,7 +134,6 @@
             this.btnMenu.ForeColor = System.Drawing.Color.White;
             this.btnMenu.Image = global::SellPhone.Properties.Resources.menu;
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
             this.btnMenu.Location = new System.Drawing.Point(-15, -2);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMenu.Name = "btnMenu";
@@ -156,7 +151,6 @@
             this.pnlSubnav.Controls.Add(this.pnlPhone);
             this.pnlSubnav.Controls.Add(this.pnlEmploy);
             this.pnlSubnav.Cursor = System.Windows.Forms.Cursors.Hand;
-
             this.pnlSubnav.Location = new System.Drawing.Point(3, 173);
             this.pnlSubnav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlSubnav.MaximumSize = new System.Drawing.Size(221, 161);
@@ -168,12 +162,10 @@
             // 
             this.pnlBrandType.Controls.Add(this.btnProviderType);
             this.pnlBrandType.Location = new System.Drawing.Point(0, 2);
-
             this.pnlBrandType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBrandType.MaximumSize = new System.Drawing.Size(221, 47);
             this.pnlBrandType.Name = "pnlBrandType";
             this.pnlBrandType.Size = new System.Drawing.Size(221, 47);
-
             this.pnlBrandType.TabIndex = 2;
             // 
             // btnProviderType
@@ -224,6 +216,7 @@
             this.btnPhone.Text = "        Điện Thoại";
             this.btnPhone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhone.UseVisualStyleBackColor = true;
+            this.btnPhone.Click += new System.EventHandler(this.btnPhone_Click);
             // 
             // pnlEmploy
             // 
@@ -460,7 +453,6 @@
             this.AutoSize = true;
             this.BackgroundImage = global::SellPhone.Properties.Resources._6u2ywY;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-
             this.ClientSize = new System.Drawing.Size(1140, 690);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.menu);
@@ -470,7 +462,6 @@
             this.MaximumSize = new System.Drawing.Size(1158, 737);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1158, 737);
-
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";

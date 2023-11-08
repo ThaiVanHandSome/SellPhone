@@ -142,6 +142,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLCHDTDataSet.xsc">
+      <DependentUpon>QLCHDTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHDTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCHDTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCHDTDataSet.xss">
+      <DependentUpon>QLCHDTDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\6u2ywY.jpeg" />
   </ItemGroup>
   <ItemGroup>

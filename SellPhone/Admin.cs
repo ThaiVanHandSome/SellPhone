@@ -57,6 +57,7 @@ namespace SellPhone
 
         private void btnBrandType_Click(object sender, EventArgs e)
         {
+            pnlContainer.Controls.Clear();
             BrandTypeControl brandControl = new BrandTypeControl();
             pnlContainer.Controls.Add(brandControl);
         }
