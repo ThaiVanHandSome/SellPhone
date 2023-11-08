@@ -49,11 +49,13 @@
             this.btnReport = new System.Windows.Forms.Button();
             this.pnlSearch = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblSlogan = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.menu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
@@ -80,6 +82,8 @@
             this.menu.Controls.Add(this.pnlAccount);
             this.menu.Controls.Add(this.pnlReport);
             this.menu.Controls.Add(this.pnlSearch);
+            this.menu.Controls.Add(this.button1);
+            this.menu.Controls.Add(this.button2);
             this.menu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.menu.Location = new System.Drawing.Point(0, 0);
@@ -347,6 +351,24 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::SellPhone.Properties.Resources.zoom_in;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 542);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(252, 52);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "        TK Phiếu Nhập";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // timerMenu
             // 
             this.timerMenu.Tick += new System.EventHandler(this.timerMenu_Tick);
@@ -394,6 +416,24 @@
             this.lblSlogan.TabIndex = 0;
             this.lblSlogan.Text = "JUST DO IT";
             this.lblSlogan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::SellPhone.Properties.Resources.zoom_in;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(3, 598);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(252, 52);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "        Xem Doanh Thu";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Admin
             // 
@@ -462,6 +502,8 @@
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Label lblSlogan;
         private System.Windows.Forms.Panel pnlContainer;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

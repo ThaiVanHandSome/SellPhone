@@ -29,18 +29,15 @@ namespace SellPhone
             typePhone = typePhoneComboBox.Text;
             phoneManu = phoneManufacturerComboBox.Text;
             List<CheckBox> listMemory = new List<CheckBox>();
-            listMemory.Add(checkBox32GB);
-            listMemory.Add(checkBox64GB);
             listMemory.Add(checkBox128GB);
             listMemory.Add(checkBox256GB);
             listMemory.Add(checkBox512GB);
+            listMemory.Add(checkBox1TB);
 
             List<CheckBox> listColor = new List<CheckBox>();
             listColor.Add(checkBoxRed);
             listColor.Add(checkBoxBlue);
-            listColor.Add(checkBoxBlack);
             listColor.Add(checkBoxPink);
-            listColor.Add(checkBoxOrgane);
 
             List<CheckBox> listPrice = new List<CheckBox>();
             listPrice.Add(checkBoxPrice_1);
@@ -131,6 +128,10 @@ namespace SellPhone
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dgPhone.DataSource = dt;
+            if(dt.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có kết quả", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             conn.Close();
         }
 
@@ -148,11 +149,43 @@ namespace SellPhone
             query = "SELECT Hang FROM LoaiSP";
             comm = new SqlCommand(query, conn);
             reader = comm.ExecuteReader();
+            List<string> manu = new List<string>();
             while (reader.Read())
             {
-                phoneManufacturerComboBox.Items.Add(reader.GetString(0));
+                Boolean check = true;
+                for(int i = 0; i < manu.Count;i++)
+                {
+                    if(reader.GetString(0) == manu[i])
+                    {
+                        check = false;
+                        break;
+                    }
+                }
+                if(check)
+                {
+                    phoneManufacturerComboBox.Items.Add(reader.GetString(0));
+                    manu.Add(reader.GetString(0));
+                }
             }
             conn.Close();
+        }
+
+        private void refeshBtn_Click(object sender, EventArgs e)
+        {
+            typePhoneComboBox.Text = "";
+            phoneManufacturerComboBox.Text = "";
+            checkBox128GB.Checked = false;
+            checkBox256GB.Checked = false;
+            checkBox512GB.Checked = false;
+            checkBox1TB.Checked = false;
+            checkBoxBlue.Checked = false;
+            checkBoxRed.Checked = false;
+            checkBoxPink.Checked = false;
+            checkBoxPrice_1.Checked = false;
+            checkBoxPrice_2.Checked = false;
+            checkBoxPrice_3.Checked = false;
+            checkBoxPrice_4.Checked = false;
+            checkBoxPrice_5.Checked = false;
         }
     }
 }

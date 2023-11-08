@@ -1,0 +1,227 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace SellPhone
+{
+    public partial class ViewThuAndChi : UserControl
+    {
+        public ViewThuAndChi()
+        {
+            InitializeComponent();
+        }
+
+        SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=QLCHDT;Integrated Security=True");
+
+        private void checkBoxDay_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxDay.Checked)
+            {
+                checkBoxMonth.Checked = false;
+                checkBoxYear.Checked = false;
+                checkBoxQ.Checked = false;
+            }
+        }
+
+        private void checkBoxMonth_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxMonth.Checked)
+            {
+                checkBoxYear.Checked = true;
+                checkBoxQ.Checked = false;
+                checkBoxDay.Checked = false;
+            }
+        }
+
+        private void checkBoxYear_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxYear.Checked)
+            {
+                checkBoxDay.Checked = false;
+            }
+        }
+
+        private void checkBoxQ_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxQ.Checked)
+            {
+                checkBoxMonth.Checked = false;
+                checkBoxYear.Checked = true;
+                checkBoxDay.Checked = false;
+            }
+        }
+
+        private void findBtn_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand comm = null;
+            SqlCommand comm2 = null;
+            SqlCommand comm3 = null;
+            SqlCommand comm4 = null;
+            if (checkBoxDay.Checked)
+            {
+                comm = new SqlCommand("LocDoanhThu_TheoNgay", conn);
+                comm.CommandType = CommandType.StoredProcedure;
+                comm3 = new SqlCommand("LocChi_TheoNgay", conn);
+                comm3.CommandType = CommandType.StoredProcedure;
+                comm2 = new SqlCommand("XemThu_TheoNgay", conn);
+                comm2.CommandType = CommandType.StoredProcedure;
+                comm4 = new SqlCommand("XemChi_TheoNgay", conn);
+                comm4.CommandType = CommandType.StoredProcedure;
+                comm.Parameters.Add(new SqlParameter("@Ngay", SqlDbType.Date));
+                comm.Parameters["@Ngay"].Value = dayInp.Value;
+                comm2.Parameters.Add(new SqlParameter("@Ngay", SqlDbType.Date));
+                comm2.Parameters["@Ngay"].Value = dayInp.Value;
+                comm3.Parameters.Add(new SqlParameter("@Ngay", SqlDbType.Date));
+                comm3.Parameters["@Ngay"].Value = dayInp.Value;
+                comm4.Parameters.Add(new SqlParameter("@Ngay", SqlDbType.Date));
+                comm4.Parameters["@Ngay"].Value = dayInp.Value;
+            }
+            else if (checkBoxMonth.Checked)
+            {
+                comm = new SqlCommand("LocDoanhThu_TheoThang", conn);
+                comm.CommandType = CommandType.StoredProcedure;
+                comm3 = new SqlCommand("LocChi_TheoThang", conn);
+                comm3.CommandType = CommandType.StoredProcedure;
+                comm2 = new SqlCommand("XemThu_TheoThang", conn);
+                comm2.CommandType = CommandType.StoredProcedure;
+                comm4 = new SqlCommand("XemChi_TheoThang", conn);
+                comm4.CommandType = CommandType.StoredProcedure;
+                comm.Parameters.Add(new SqlParameter("@Thang", SqlDbType.Int));
+                comm.Parameters["@Thang"].Value = monthInp.Text;
+                comm.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm.Parameters["@Nam"].Value = yearInp.Text;
+                comm2.Parameters.Add(new SqlParameter("@Thang", SqlDbType.Int));
+                comm2.Parameters["@Thang"].Value = monthInp.Text;
+                comm2.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm2.Parameters["@Nam"].Value = yearInp.Text;
+                comm3.Parameters.Add(new SqlParameter("@Thang", SqlDbType.Int));
+                comm3.Parameters["@Thang"].Value = monthInp.Text;
+                comm3.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm3.Parameters["@Nam"].Value = yearInp.Text;
+                comm4.Parameters.Add(new SqlParameter("@Thang", SqlDbType.Int));
+                comm4.Parameters["@Thang"].Value = monthInp.Text;
+                comm4.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm4.Parameters["@Nam"].Value = yearInp.Text;
+            }
+            else if (checkBoxQ.Checked)
+            {
+                comm = new SqlCommand("LocDoanhThu_TheoQuy", conn);
+                comm.CommandType = CommandType.StoredProcedure;
+                comm3 = new SqlCommand("LocChi_TheoQuy", conn);
+                comm3.CommandType = CommandType.StoredProcedure;
+                comm2 = new SqlCommand("XemThu_TheoQuy", conn);
+                comm2.CommandType = CommandType.StoredProcedure;
+                comm4 = new SqlCommand("XemChi_TheoQuy", conn);
+                comm4.CommandType = CommandType.StoredProcedure;
+                int quy = 1;
+                if (radioButton2.Checked)
+                {
+                    quy = 2;
+                }
+                else if (radioButton3.Checked)
+                {
+                    quy = 3;
+                }
+                else if (radioButton4.Checked)
+                {
+                    quy = 4;
+                }
+                comm.Parameters.Add(new SqlParameter("@Quy", SqlDbType.Int));
+                comm.Parameters["@Quy"].Value = quy;
+                comm.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm.Parameters["@Nam"].Value = yearInp.Text;
+                comm2.Parameters.Add(new SqlParameter("@Quy", SqlDbType.Int));
+                comm2.Parameters["@Quy"].Value = quy;
+                comm2.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm2.Parameters["@Nam"].Value = yearInp.Text;
+                comm3.Parameters.Add(new SqlParameter("@Quy", SqlDbType.Int));
+                comm3.Parameters["@Quy"].Value = quy;
+                comm3.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm3.Parameters["@Nam"].Value = yearInp.Text;
+                comm4.Parameters.Add(new SqlParameter("@Quy", SqlDbType.Int));
+                comm4.Parameters["@Quy"].Value = quy;
+                comm4.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm4.Parameters["@Nam"].Value = yearInp.Text;
+            }
+            else if (checkBoxYear.Checked)
+            {
+                comm = new SqlCommand("LocDoanhThu_TheoNam", conn);
+                comm.CommandType = CommandType.StoredProcedure;
+                comm3 = new SqlCommand("LocChi_TheoNam", conn);
+                comm3.CommandType = CommandType.StoredProcedure;
+                comm2 = new SqlCommand("XemThu_TheoNam", conn);
+                comm2.CommandType = CommandType.StoredProcedure;
+                comm4 = new SqlCommand("XemChi_TheoNam", conn);
+                comm4.CommandType = CommandType.StoredProcedure;
+                comm.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm.Parameters["@Nam"].Value = yearInp.Text;
+                comm2.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm2.Parameters["@Nam"].Value = yearInp.Text;
+                comm3.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm3.Parameters["@Nam"].Value = yearInp.Text;
+                comm4.Parameters.Add(new SqlParameter("@Nam", SqlDbType.Int));
+                comm4.Parameters["@Nam"].Value = yearInp.Text;
+            }
+            SqlDataAdapter adapter = new SqlDataAdapter(comm);
+            SqlDataAdapter adapter2 = new SqlDataAdapter(comm3);
+            DataTable dt = new DataTable();
+            DataTable dt2 = new DataTable();
+            adapter.Fill(dt);
+            adapter2.Fill(dt2);
+            dgViewThu.DataSource = dt;
+            dgViewChi.DataSource = dt2;
+            SqlDataReader reader = comm2.ExecuteReader();
+            while (reader.Read())
+            {
+                sumThu.Text = reader[1].ToString();
+            }
+            reader.Close();
+            SqlDataReader reader2 = comm4.ExecuteReader();
+            while (reader2.Read())
+            {
+                sumChi.Text = reader2[1].ToString();
+            }
+            reader2.Close();
+            if (dt.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có kết quả", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                sumThu.Text = "";
+                sumChi.Text = "";
+            }
+            conn.Close();
+        }
+
+        private void refeshBtn_Click(object sender, EventArgs e)
+        {
+            monthInp.Text = "1";
+            yearInp.Text = "2023";
+            radioButton1.Checked = true;
+            checkBoxDay.Checked = true;
+            checkBoxMonth.Checked = false;
+            checkBoxYear.Checked = false;
+            checkBoxQ.Checked = false;
+            sumThu.Text = "";
+            sumChi.Text = "";
+        }
+
+        private void ViewThuAndChi_Load(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 12; i++)
+            {
+                monthInp.Items.Add(i);
+            }
+            monthInp.Text = "1";
+            yearInp.Text = "2023";
+            radioButton1.Checked = true;
+            checkBoxDay.Checked = true;
+        }
+    }
+}

@@ -62,5 +62,17 @@ namespace SellPhone
             FindPhoneControl findPhoneControl = new FindPhoneControl();
             pnlContainer.Controls.Add(findPhoneControl);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FindImportControl findImportControl = new FindImportControl();
+            pnlContainer.Controls.Add(findImportControl);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ViewThuAndChi viewThuAndChi = new ViewThuAndChi();
+            pnlContainer.Controls.Add(viewThuAndChi);
+        }
     }
 }
