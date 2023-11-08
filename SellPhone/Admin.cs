@@ -16,6 +16,8 @@ namespace SellPhone
         {
             InitializeComponent();
         }
+
+        
         bool menuExpand = false;
         private void timerMenu_Tick(object sender, EventArgs e)
         {
@@ -49,6 +51,8 @@ namespace SellPhone
         private void Form1_Load(object sender, EventArgs e)
         {
             pnlSubnav.Height = 0;
+         
+
         }
 
         private void btnBrandType_Click(object sender, EventArgs e)
@@ -58,11 +62,22 @@ namespace SellPhone
             pnlContainer.Controls.Add(brandControl);
         }
 
-        private void btnPhone_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            pnlContainer.Controls.Clear();
-            PhoneControl phoneControl = new PhoneControl();
-            pnlContainer.Controls.Add(phoneControl);
+            FindPhoneControl findPhoneControl = new FindPhoneControl();
+            pnlContainer.Controls.Add(findPhoneControl);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FindImportControl findImportControl = new FindImportControl();
+            pnlContainer.Controls.Add(findImportControl);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ViewThuAndChi viewThuAndChi = new ViewThuAndChi();
+            pnlContainer.Controls.Add(viewThuAndChi);
         }
     }
 }
