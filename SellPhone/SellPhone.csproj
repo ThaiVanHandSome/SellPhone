@@ -64,11 +64,18 @@
     <Compile Include="BrandTypeControl.Designer.cs">
       <DependentUpon>BrandTypeControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployControl.cs">
+
+    <Compile Include="FindBillControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EmployControl.Designer.cs">
-      <DependentUpon>EmployControl.cs</DependentUpon>
+    <Compile Include="FindBillControl.Designer.cs">
+      <DependentUpon>FindBillControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindImportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FindImportControl.Designer.cs">
+      <DependentUpon>FindImportControl.cs</DependentUpon>
     </Compile>
     <Compile Include="FindPhoneControl.cs">
       <SubType>UserControl</SubType>
@@ -84,10 +91,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlConnectionManager.cs" />
-    <EmbeddedResource Include="AddEmploy.resx">
-      <DependentUpon>AddEmploy.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="ViewThuAndChi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewThuAndChi.Designer.cs">
+      <DependentUpon>ViewThuAndChi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,8 +106,11 @@
     <EmbeddedResource Include="BrandTypeControl.resx">
       <DependentUpon>BrandTypeControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployControl.resx">
-      <DependentUpon>EmployControl.cs</DependentUpon>
+    <EmbeddedResource Include="FindBillControl.resx">
+      <DependentUpon>FindBillControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindImportControl.resx">
+      <DependentUpon>FindImportControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindPhoneControl.resx">
       <DependentUpon>FindPhoneControl.cs</DependentUpon>
@@ -113,6 +125,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewThuAndChi.resx">
+      <DependentUpon>ViewThuAndChi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

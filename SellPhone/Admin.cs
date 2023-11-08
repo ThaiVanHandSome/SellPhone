@@ -61,10 +61,22 @@ namespace SellPhone
             pnlContainer.Controls.Add(brandControl);
         }
 
-        private void btnEmploy_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            EmployControl employcontrol = new EmployControl();
-            pnlContainer.Controls.Add(employcontrol);
+            FindPhoneControl findPhoneControl = new FindPhoneControl();
+            pnlContainer.Controls.Add(findPhoneControl);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FindImportControl findImportControl = new FindImportControl();
+            pnlContainer.Controls.Add(findImportControl);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ViewThuAndChi viewThuAndChi = new ViewThuAndChi();
+            pnlContainer.Controls.Add(viewThuAndChi);
         }
     }
 }

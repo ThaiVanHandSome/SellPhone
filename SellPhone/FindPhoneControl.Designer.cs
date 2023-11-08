@@ -31,24 +31,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPrice_3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPrice_2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPrice_4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPrice_5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPrice_1 = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlue = new System.Windows.Forms.CheckBox();
+            this.checkBoxPink = new System.Windows.Forms.CheckBox();
+            this.checkBoxRed = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.idNCCComboBox = new System.Windows.Forms.ComboBox();
+            this.checkBox1TB = new System.Windows.Forms.CheckBox();
+            this.checkBox512GB = new System.Windows.Forms.CheckBox();
+            this.checkBox128GB = new System.Windows.Forms.CheckBox();
+            this.checkBox256GB = new System.Windows.Forms.CheckBox();
+            this.phoneManufacturerComboBox = new System.Windows.Forms.ComboBox();
             this.typePhoneComboBox = new System.Windows.Forms.ComboBox();
             this.idPhoneInp = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,8 +54,8 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.dgPhone = new System.Windows.Forms.DataGridView();
-            this.refeshBtn = new System.Windows.Forms.Button();
             this.findBtn = new System.Windows.Forms.Button();
+            this.refeshBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -83,7 +80,7 @@
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.idNCCComboBox);
+            this.groupBox1.Controls.Add(this.phoneManufacturerComboBox);
             this.groupBox1.Controls.Add(this.typePhoneComboBox);
             this.groupBox1.Controls.Add(this.idPhoneInp);
             this.groupBox1.Controls.Add(this.label4);
@@ -92,18 +89,18 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(15, 60);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(945, 347);
+            this.groupBox1.Size = new System.Drawing.Size(884, 347);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Tìm Kiếm";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.checkBox11);
-            this.groupBox4.Controls.Add(this.checkBox12);
-            this.groupBox4.Controls.Add(this.checkBox13);
-            this.groupBox4.Controls.Add(this.checkBox14);
-            this.groupBox4.Controls.Add(this.checkBox15);
+            this.groupBox4.Controls.Add(this.checkBoxPrice_3);
+            this.groupBox4.Controls.Add(this.checkBoxPrice_2);
+            this.groupBox4.Controls.Add(this.checkBoxPrice_4);
+            this.groupBox4.Controls.Add(this.checkBoxPrice_5);
+            this.groupBox4.Controls.Add(this.checkBoxPrice_1);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(13, 214);
             this.groupBox4.Name = "groupBox4";
@@ -112,237 +109,198 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Giá Bán: ";
             // 
-            // checkBox11
+            // checkBoxPrice_3
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox11.Location = new System.Drawing.Point(383, 26);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(141, 24);
-            this.checkBox11.TabIndex = 4;
-            this.checkBox11.Text = "Từ 4 - 7 triệu";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBoxPrice_3.AutoSize = true;
+            this.checkBoxPrice_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPrice_3.Location = new System.Drawing.Point(383, 26);
+            this.checkBoxPrice_3.Name = "checkBoxPrice_3";
+            this.checkBoxPrice_3.Size = new System.Drawing.Size(141, 24);
+            this.checkBoxPrice_3.TabIndex = 4;
+            this.checkBoxPrice_3.Text = "Từ 4 - 7 triệu";
+            this.checkBoxPrice_3.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // checkBoxPrice_2
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.Location = new System.Drawing.Point(210, 26);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(141, 24);
-            this.checkBox12.TabIndex = 3;
-            this.checkBox12.Text = "Từ 2 - 4 triệu";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBoxPrice_2.AutoSize = true;
+            this.checkBoxPrice_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPrice_2.Location = new System.Drawing.Point(210, 26);
+            this.checkBoxPrice_2.Name = "checkBoxPrice_2";
+            this.checkBoxPrice_2.Size = new System.Drawing.Size(141, 24);
+            this.checkBoxPrice_2.TabIndex = 3;
+            this.checkBoxPrice_2.Text = "Từ 2 - 4 triệu";
+            this.checkBoxPrice_2.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // checkBoxPrice_4
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox13.Location = new System.Drawing.Point(33, 69);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(151, 24);
-            this.checkBox13.TabIndex = 2;
-            this.checkBox13.Text = "Từ 7 - 13 triệu";
-            this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBoxPrice_4.AutoSize = true;
+            this.checkBoxPrice_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPrice_4.Location = new System.Drawing.Point(33, 69);
+            this.checkBoxPrice_4.Name = "checkBoxPrice_4";
+            this.checkBoxPrice_4.Size = new System.Drawing.Size(151, 24);
+            this.checkBoxPrice_4.TabIndex = 2;
+            this.checkBoxPrice_4.Text = "Từ 7 - 13 triệu";
+            this.checkBoxPrice_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxPrice_4.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // checkBoxPrice_5
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.Location = new System.Drawing.Point(210, 69);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(139, 24);
-            this.checkBox14.TabIndex = 1;
-            this.checkBox14.Text = "Trên 13 triệu";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.checkBoxPrice_5.AutoSize = true;
+            this.checkBoxPrice_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPrice_5.Location = new System.Drawing.Point(210, 69);
+            this.checkBoxPrice_5.Name = "checkBoxPrice_5";
+            this.checkBoxPrice_5.Size = new System.Drawing.Size(139, 24);
+            this.checkBoxPrice_5.TabIndex = 1;
+            this.checkBoxPrice_5.Text = "Trên 13 triệu";
+            this.checkBoxPrice_5.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // checkBoxPrice_1
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox15.Location = new System.Drawing.Point(33, 26);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(130, 24);
-            this.checkBox15.TabIndex = 0;
-            this.checkBox15.Text = "Dưới 2 triệu";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.checkBoxPrice_1.AutoSize = true;
+            this.checkBoxPrice_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPrice_1.Location = new System.Drawing.Point(33, 26);
+            this.checkBoxPrice_1.Name = "checkBoxPrice_1";
+            this.checkBoxPrice_1.Size = new System.Drawing.Size(130, 24);
+            this.checkBoxPrice_1.TabIndex = 0;
+            this.checkBoxPrice_1.Text = "Dưới 2 triệu";
+            this.checkBoxPrice_1.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.checkBox6);
-            this.groupBox3.Controls.Add(this.checkBox7);
-            this.groupBox3.Controls.Add(this.checkBox8);
-            this.groupBox3.Controls.Add(this.checkBox9);
-            this.groupBox3.Controls.Add(this.checkBox10);
+            this.groupBox3.Controls.Add(this.checkBoxBlue);
+            this.groupBox3.Controls.Add(this.checkBoxPink);
+            this.groupBox3.Controls.Add(this.checkBoxRed);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(503, 91);
+            this.groupBox3.Location = new System.Drawing.Point(408, 89);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(411, 112);
+            this.groupBox3.Size = new System.Drawing.Size(411, 82);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Màu Sắc: ";
             // 
-            // checkBox6
+            // checkBoxBlue
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.checkBox6.Location = new System.Drawing.Point(264, 26);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(62, 24);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "Tím";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBoxBlue.AutoSize = true;
+            this.checkBoxBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBlue.ForeColor = System.Drawing.Color.Blue;
+            this.checkBoxBlue.Location = new System.Drawing.Point(156, 26);
+            this.checkBoxBlue.Name = "checkBoxBlue";
+            this.checkBoxBlue.Size = new System.Drawing.Size(73, 24);
+            this.checkBoxBlue.TabIndex = 3;
+            this.checkBoxBlue.Text = "Xanh";
+            this.checkBoxBlue.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkBoxPink
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox7.Location = new System.Drawing.Point(156, 26);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(73, 24);
-            this.checkBox7.TabIndex = 3;
-            this.checkBox7.Text = "Xanh";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBoxPink.AutoSize = true;
+            this.checkBoxPink.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPink.ForeColor = System.Drawing.Color.Fuchsia;
+            this.checkBoxPink.Location = new System.Drawing.Point(275, 26);
+            this.checkBoxPink.Name = "checkBoxPink";
+            this.checkBoxPink.Size = new System.Drawing.Size(75, 24);
+            this.checkBoxPink.TabIndex = 1;
+            this.checkBoxPink.Text = "Hồng";
+            this.checkBoxPink.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkBoxRed
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.checkBox8.Location = new System.Drawing.Point(156, 72);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(69, 24);
-            this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "Cam";
-            this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.ForeColor = System.Drawing.Color.Fuchsia;
-            this.checkBox9.Location = new System.Drawing.Point(41, 72);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(75, 24);
-            this.checkBox9.TabIndex = 1;
-            this.checkBox9.Text = "Hồng";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox10.ForeColor = System.Drawing.Color.Red;
-            this.checkBox10.Location = new System.Drawing.Point(41, 26);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(54, 24);
-            this.checkBox10.TabIndex = 0;
-            this.checkBox10.Text = "Đỏ";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBoxRed.AutoSize = true;
+            this.checkBoxRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRed.ForeColor = System.Drawing.Color.Red;
+            this.checkBoxRed.Location = new System.Drawing.Point(41, 26);
+            this.checkBoxRed.Name = "checkBoxRed";
+            this.checkBoxRed.Size = new System.Drawing.Size(54, 24);
+            this.checkBoxRed.TabIndex = 0;
+            this.checkBoxRed.Text = "Đỏ";
+            this.checkBoxRed.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox5);
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.checkBox1TB);
+            this.groupBox2.Controls.Add(this.checkBox512GB);
+            this.groupBox2.Controls.Add(this.checkBox128GB);
+            this.groupBox2.Controls.Add(this.checkBox256GB);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(13, 89);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(432, 114);
+            this.groupBox2.Size = new System.Drawing.Size(314, 114);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bộ Nhớ: ";
             // 
-            // checkBox5
+            // checkBox1TB
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(292, 26);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(88, 24);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "512GB";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox1TB.AutoSize = true;
+            this.checkBox1TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1TB.Location = new System.Drawing.Point(162, 74);
+            this.checkBox1TB.Name = "checkBox1TB";
+            this.checkBox1TB.Size = new System.Drawing.Size(65, 24);
+            this.checkBox1TB.TabIndex = 5;
+            this.checkBox1TB.Text = "1TB";
+            this.checkBox1TB.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkBox512GB
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(178, 26);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(88, 24);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "128GB";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox512GB.AutoSize = true;
+            this.checkBox512GB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox512GB.Location = new System.Drawing.Point(33, 74);
+            this.checkBox512GB.Name = "checkBox512GB";
+            this.checkBox512GB.Size = new System.Drawing.Size(88, 24);
+            this.checkBox512GB.TabIndex = 4;
+            this.checkBox512GB.Text = "512GB";
+            this.checkBox512GB.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkBox128GB
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(178, 65);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(88, 24);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "256GB";
-            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox128GB.AutoSize = true;
+            this.checkBox128GB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox128GB.Location = new System.Drawing.Point(35, 28);
+            this.checkBox128GB.Name = "checkBox128GB";
+            this.checkBox128GB.Size = new System.Drawing.Size(88, 24);
+            this.checkBox128GB.TabIndex = 3;
+            this.checkBox128GB.Text = "128GB";
+            this.checkBox128GB.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkBox256GB
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(33, 65);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(78, 24);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "64GB";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox256GB.AutoSize = true;
+            this.checkBox256GB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox256GB.Location = new System.Drawing.Point(165, 28);
+            this.checkBox256GB.Name = "checkBox256GB";
+            this.checkBox256GB.Size = new System.Drawing.Size(88, 24);
+            this.checkBox256GB.TabIndex = 2;
+            this.checkBox256GB.Text = "256GB";
+            this.checkBox256GB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox256GB.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // phoneManufacturerComboBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(33, 26);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(78, 24);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "32GB";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // idNCCComboBox
-            // 
-            this.idNCCComboBox.FormattingEnabled = true;
-            this.idNCCComboBox.Location = new System.Drawing.Point(745, 39);
-            this.idNCCComboBox.Name = "idNCCComboBox";
-            this.idNCCComboBox.Size = new System.Drawing.Size(169, 30);
-            this.idNCCComboBox.TabIndex = 5;
+            this.phoneManufacturerComboBox.FormattingEnabled = true;
+            this.phoneManufacturerComboBox.Location = new System.Drawing.Point(730, 37);
+            this.phoneManufacturerComboBox.Name = "phoneManufacturerComboBox";
+            this.phoneManufacturerComboBox.Size = new System.Drawing.Size(124, 30);
+            this.phoneManufacturerComboBox.TabIndex = 5;
             // 
             // typePhoneComboBox
             // 
             this.typePhoneComboBox.FormattingEnabled = true;
-            this.typePhoneComboBox.Location = new System.Drawing.Point(464, 39);
+            this.typePhoneComboBox.Location = new System.Drawing.Point(396, 37);
             this.typePhoneComboBox.Name = "typePhoneComboBox";
-            this.typePhoneComboBox.Size = new System.Drawing.Size(169, 30);
+            this.typePhoneComboBox.Size = new System.Drawing.Size(251, 30);
             this.typePhoneComboBox.TabIndex = 4;
             // 
             // idPhoneInp
             // 
             this.idPhoneInp.Location = new System.Drawing.Point(142, 39);
             this.idPhoneInp.Name = "idPhoneInp";
-            this.idPhoneInp.Size = new System.Drawing.Size(152, 28);
+            this.idPhoneInp.Size = new System.Drawing.Size(98, 28);
             this.idPhoneInp.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(322, 44);
+            this.label4.Location = new System.Drawing.Point(257, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 20);
             this.label4.TabIndex = 2;
@@ -352,11 +310,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(656, 44);
+            this.label3.Location = new System.Drawing.Point(665, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Mã NCC: ";
+            this.label3.Text = "Hãng: ";
             // 
             // label2
             // 
@@ -375,29 +333,15 @@
             this.dgPhone.Name = "dgPhone";
             this.dgPhone.RowHeadersWidth = 51;
             this.dgPhone.RowTemplate.Height = 24;
-            this.dgPhone.Size = new System.Drawing.Size(945, 271);
+            this.dgPhone.Size = new System.Drawing.Size(884, 265);
             this.dgPhone.TabIndex = 2;
-            // 
-            // refeshBtn
-            // 
-            this.refeshBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refeshBtn.Image = global::SellPhone.Properties.Resources.edit;
-            this.refeshBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.refeshBtn.Location = new System.Drawing.Point(584, 240);
-            this.refeshBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.refeshBtn.Name = "refeshBtn";
-            this.refeshBtn.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.refeshBtn.Size = new System.Drawing.Size(155, 67);
-            this.refeshBtn.TabIndex = 5;
-            this.refeshBtn.Text = "    Làm Mới";
-            this.refeshBtn.UseVisualStyleBackColor = true;
             // 
             // findBtn
             // 
             this.findBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.findBtn.Image = global::SellPhone.Properties.Resources.zoom_in;
             this.findBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.findBtn.Location = new System.Drawing.Point(759, 240);
+            this.findBtn.Location = new System.Drawing.Point(646, 259);
             this.findBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.findBtn.Name = "findBtn";
             this.findBtn.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -405,16 +349,36 @@
             this.findBtn.TabIndex = 8;
             this.findBtn.Text = "    Tìm Kiếm";
             this.findBtn.UseVisualStyleBackColor = true;
+            this.findBtn.Click += new System.EventHandler(this.findBtn_Click);
+            // 
+            // refeshBtn
+            // 
+            this.refeshBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refeshBtn.Image = global::SellPhone.Properties.Resources.edit;
+            this.refeshBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.refeshBtn.Location = new System.Drawing.Point(646, 176);
+            this.refeshBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.refeshBtn.Name = "refeshBtn";
+            this.refeshBtn.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.refeshBtn.Size = new System.Drawing.Size(155, 67);
+            this.refeshBtn.TabIndex = 5;
+            this.refeshBtn.Text = "    Làm Mới";
+            this.refeshBtn.UseVisualStyleBackColor = true;
+            this.refeshBtn.Click += new System.EventHandler(this.refeshBtn_Click);
             // 
             // FindPhoneControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dgPhone);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "FindPhoneControl";
-            this.Size = new System.Drawing.Size(978, 709);
+            this.Size = new System.Drawing.Size(911, 681);
+            this.Load += new System.EventHandler(this.FindPhoneControl_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -439,28 +403,25 @@
         private System.Windows.Forms.Label label2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox idNCCComboBox;
+        private System.Windows.Forms.CheckBox checkBox512GB;
+        private System.Windows.Forms.CheckBox checkBox128GB;
+        private System.Windows.Forms.CheckBox checkBox256GB;
+        private System.Windows.Forms.ComboBox phoneManufacturerComboBox;
         private System.Windows.Forms.ComboBox typePhoneComboBox;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBoxBlue;
+        private System.Windows.Forms.CheckBox checkBoxPink;
+        private System.Windows.Forms.CheckBox checkBoxRed;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox checkBoxPrice_3;
+        private System.Windows.Forms.CheckBox checkBoxPrice_2;
+        private System.Windows.Forms.CheckBox checkBoxPrice_4;
+        private System.Windows.Forms.CheckBox checkBoxPrice_5;
+        private System.Windows.Forms.CheckBox checkBoxPrice_1;
         private System.Windows.Forms.DataGridView dgPhone;
         private System.Windows.Forms.Button refeshBtn;
         private System.Windows.Forms.Button findBtn;
+        private System.Windows.Forms.CheckBox checkBox1TB;
     }
 }
