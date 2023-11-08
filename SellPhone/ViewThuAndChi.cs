@@ -71,7 +71,7 @@ namespace SellPhone
                 comm.CommandType = CommandType.StoredProcedure;
                 comm3 = new SqlCommand("LocChi_TheoNgay", conn);
                 comm3.CommandType = CommandType.StoredProcedure;
-                comm2 = new SqlCommand("XemThu_TheoNgay", conn);
+                comm2 = new SqlCommand("XemDoanhThu_TheoNgay", conn);
                 comm2.CommandType = CommandType.StoredProcedure;
                 comm4 = new SqlCommand("XemChi_TheoNgay", conn);
                 comm4.CommandType = CommandType.StoredProcedure;
@@ -90,7 +90,7 @@ namespace SellPhone
                 comm.CommandType = CommandType.StoredProcedure;
                 comm3 = new SqlCommand("LocChi_TheoThang", conn);
                 comm3.CommandType = CommandType.StoredProcedure;
-                comm2 = new SqlCommand("XemThu_TheoThang", conn);
+                comm2 = new SqlCommand("XemDoanhThu_TheoThang", conn);
                 comm2.CommandType = CommandType.StoredProcedure;
                 comm4 = new SqlCommand("XemChi_TheoThang", conn);
                 comm4.CommandType = CommandType.StoredProcedure;
@@ -117,7 +117,7 @@ namespace SellPhone
                 comm.CommandType = CommandType.StoredProcedure;
                 comm3 = new SqlCommand("LocChi_TheoQuy", conn);
                 comm3.CommandType = CommandType.StoredProcedure;
-                comm2 = new SqlCommand("XemThu_TheoQuy", conn);
+                comm2 = new SqlCommand("XemDoanhThu_TheoQuy", conn);
                 comm2.CommandType = CommandType.StoredProcedure;
                 comm4 = new SqlCommand("XemChi_TheoQuy", conn);
                 comm4.CommandType = CommandType.StoredProcedure;
@@ -157,7 +157,7 @@ namespace SellPhone
                 comm.CommandType = CommandType.StoredProcedure;
                 comm3 = new SqlCommand("LocChi_TheoNam", conn);
                 comm3.CommandType = CommandType.StoredProcedure;
-                comm2 = new SqlCommand("XemThu_TheoNam", conn);
+                comm2 = new SqlCommand("XemDoanhThu_TheoNam", conn);
                 comm2.CommandType = CommandType.StoredProcedure;
                 comm4 = new SqlCommand("XemChi_TheoNam", conn);
                 comm4.CommandType = CommandType.StoredProcedure;
@@ -178,18 +178,16 @@ namespace SellPhone
             adapter2.Fill(dt2);
             dgViewThu.DataSource = dt;
             dgViewChi.DataSource = dt2;
-            SqlDataReader reader = comm2.ExecuteReader();
-            while (reader.Read())
-            {
-                sumThu.Text = reader[1].ToString();
-            }
-            reader.Close();
-            SqlDataReader reader2 = comm4.ExecuteReader();
-            while (reader2.Read())
-            {
-                sumChi.Text = reader2[1].ToString();
-            }
-            reader2.Close();
+            SqlParameter tongThu = new SqlParameter("@TongThu", SqlDbType.Money);
+            tongThu.Direction = ParameterDirection.ReturnValue;
+            comm2.Parameters.Add(tongThu);
+            SqlParameter tongChi = new SqlParameter("@TongChi", SqlDbType.Money);
+            tongChi.Direction = ParameterDirection.ReturnValue;
+            comm4.Parameters.Add(tongChi);
+            comm2.ExecuteNonQuery();
+            comm4.ExecuteNonQuery();
+            sumThu.Text = tongThu.Value.ToString();
+            sumChi.Text = tongChi.Value.ToString();
             if (dt.Rows.Count == 0)
             {
                 MessageBox.Show("Không có kết quả", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
