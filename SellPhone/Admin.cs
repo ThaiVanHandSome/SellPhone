@@ -16,6 +16,8 @@ namespace SellPhone
         {
             InitializeComponent();
         }
+
+        
         bool menuExpand = false;
         private void timerMenu_Tick(object sender, EventArgs e)
         {
@@ -49,6 +51,8 @@ namespace SellPhone
         private void Form1_Load(object sender, EventArgs e)
         {
             pnlSubnav.Height = 0;
+         
+
         }
 
         private void btnBrandType_Click(object sender, EventArgs e)
