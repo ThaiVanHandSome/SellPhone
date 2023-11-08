@@ -3,9 +3,6 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.
 
-SellPhone/Admin.Designer.cs
-SellPhone/Admin.cs
-SellPhone/SellPhone.csproj
 
 # User-specific files
 *.rsuser
