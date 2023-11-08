@@ -1,0 +1,15 @@
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\bin\Debug\SellPhone.exe.config
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\bin\Debug\SellPhone.exe
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\bin\Debug\SellPhone.pdb
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.csproj.AssemblyReference.cache
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.csproj.SuggestedBindingRedirects.cache
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.Properties.Resources.resources
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.csproj.GenerateResource.cache
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.csproj.CoreCompileInputs.cache
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.exe
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.pdb
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.Admin.resources
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.BrandControl.resources
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.BrandTypeControl.resources
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.TypeControl.resources
+E:\HOCTAP\SQL\Project\SellPhone\SellPhone\obj\Debug\SellPhone.BillControl.resources
